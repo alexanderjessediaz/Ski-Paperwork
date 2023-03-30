@@ -8,14 +8,16 @@ export default function Home() {
       <Head>
         <title>Alpine Ski</title>
       </Head>
-      <form classNaME={styles.form} method='get'>
         <div className={styles.customerInfoContainer}>
-            <label for='First Name' name='First Name' value='First Name'>First Name</label>
-            <input type="text" name='First Name' />
-            <label for='Last Name' name='Last Name' value='Last Name'>Last Name</label>
-            <input type="text" name='Last Name' />
+          <form className={styles.form} method='get'>
+              <label for='First Name' name='First Name' value='First Name'>First Name</label>
+              <input type="text" name='First Name' />
+              <label for='Last Name' name='Last Name' value='Last Name'>Last Name</label>
+              <input type="text" name='Last Name' />
+              <label for='Phone number' name='Phone Number' value='Phone Number'>Phone Number</label>
+              <input type="tel" name='Phone Number' />
+          </form>
         </div>
-      </form>
     </div>
   )
 }
